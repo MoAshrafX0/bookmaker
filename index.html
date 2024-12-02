@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- fontawsem file -->
+     <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- bootstrab file -->
+     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- Style file -->
+     <link rel="stylesheet" href="./CSS/Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="interface position-relative py-5">
+        <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="position-relative py-2">Bookmaker</h1>
+            <div class="bookmaker-body d-flex flex-column justify-content-center align-items-center py-5 mt-5 w-100 gab-4">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name w-100 d-flex flex-column justify-content-center">
+                    <label for="bookmarkName" class="pb-2 fw-semibold">
+                      <i class="fa-solid fa-book-bookmark pe-2"></i>
+                      Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" oninput="valiateform(this)" class="form-control mb-lg-2" id="bookmarkName">
+                  </div>
+                  <div class="site-name w-100 d-flex flex-column justify-content-center">
+                    <label for="bookmarkName" class="pb-2  fw-semibold">
+                        <i class="fa-solid fa-link"></i>
+                      Site URL</label>
+                    <input type="text" placeholder="Bookmark Name" oninput="valiateform(this)" class="form-control" id="bookmarkLink">
+                  </div>    
+                  <button class="btn btn-submit px-5 bg-danger text-white mt-5 " onclick="addLink()" id="submitBtn">Submit</button>
+            </div>
+            <table class="table text-center bg-light mt-4">
+                <thead >
+                    <th class="text-capitalize"> index</th>
+                    <th class="text-capitalize"> Website Name</th>
+                    <th class="text-capitalize"> Visit</th>
+                    <th class="text-capitalize"> Delete</th>
+                </thead>
+               <tbody id="tbody">
+                
+               </tbody>
+            </table>
+        </div>
+
+    </main>
+
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
